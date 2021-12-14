@@ -18,6 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/kalkulator"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_calculate_24"
         android:text="Kalkulator" />
 
     <Button
@@ -25,6 +27,8 @@
         android:layout_marginLeft="20dp"
         android:layout_height="wrap_content"
         android:id="@+id/databuku"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_list_alt_24"
         android:text="Data Buku" />
     </LinearLayout>
 

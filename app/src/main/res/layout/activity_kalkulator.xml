@@ -39,7 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:hint="Angka 1" />
+                android:hint="Angka 1"
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
         <LinearLayout
@@ -51,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:inputType="numberDecimal"
                 android:text="Angka 2"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -60,61 +62,79 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:hint="Angka 2" />
+                android:hint="Angka 2"
+                android:inputType="numberDecimal" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_margin="20dp"
+        android:gravity="center"
         android:orientation="horizontal">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/kali"
-            android:text="*"/>
 
         <Button
+            android:id="@+id/kali"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="*" />
+
+        <Button
             android:id="@+id/bagi"
-            android:layout_marginLeft="5dp"
-            android:text="/"/>
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="/" />
+
+        <Button
             android:id="@+id/tambah"
-            android:layout_marginLeft="5dp"
-            android:text="+"/>
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/kurang"
             android:layout_marginLeft="5dp"
-            android:text="-"/>
+            android:text="+" />
+
+        <Button
+            android:id="@+id/kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="-" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right">
-    <Button
-        android:layout_marginRight="20dp"
+
+        <Button
+            android:id="@+id/hapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="C" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jawaban"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hapus"
-        android:layout_marginLeft="5dp"
-        android:text="C"/>
-    </LinearLayout>
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Jawaban : "
+        android:textSize="20dp"
+        android:visibility="gone" />
+
     <TextView
         android:id="@+id/hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textSize="30dp"
         android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="20"
+        android:textSize="30dp"
         android:textStyle="bold"
-        android:text=""/>
+        android:visibility="gone" />
 </LinearLayout>
