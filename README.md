@@ -1,7 +1,7 @@
 # Static Recyclerview Using Kotlin
 Static recyclerview dan kalkulator sederhana, dibuat dengan menggunakan kotlin.
 
-# Showcase
+# Screenshot
 ![](https://user-images.githubusercontent.com/79903756/145961350-7cb2a26a-a05c-4a49-9238-23633b764a6a.jpg)
 ![](https://user-images.githubusercontent.com/79903756/145961352-c56303ee-8c6f-4de3-be83-924c454d8685.jpg)
 ![](https://user-images.githubusercontent.com/79903756/145961342-55d5a5b4-0c97-44ba-84b3-29cf816f61f1.jpg)
