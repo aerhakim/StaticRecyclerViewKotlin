@@ -1,0 +1,1 @@
+# Static Recyclerview Using Kotlin
