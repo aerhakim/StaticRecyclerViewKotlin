@@ -10,21 +10,20 @@ import retrofit2.Response
 
 
 class DataBukuActivity : AppCompatActivity() {
-
-    private val list = ArrayList<BukuModel>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data_buku)
+        val recyclerview = findViewById<RecyclerView>(R.id.rv_buku)
+        recyclerview.layoutManager = LinearLayoutManager(this)
 
-        val rvBuku:RecyclerView = findViewById(R.id.rv_buku)
+        val data = ArrayList<BukuModel>()
+        data.add(BukuModel(R.drawable.pcs_b1, "The Art of War", "Rp. 150000"))
+        data.add(BukuModel(R.drawable.pcs_b2, "Tirai Menurun", "Rp. 150000"))
+        data.add(BukuModel(R.drawable.pcs_b3, "Level Up", "Rp. 150000"))
+        data.add(BukuModel(R.drawable.pcs_b4, "Keberangkatan", "Rp. 150000"))
 
-        rvBuku.setHasFixedSize(true)
-        rvBuku.layoutManager = LinearLayoutManager(this)
-
-        Config.instances.getBuku().enqueue(object : Callback<ArrayList<BukuModel>>{
-
-        })
+        val adapter = BukuAdapter(data)
+        recyclerview.adapter = adapter
 
     }
 }

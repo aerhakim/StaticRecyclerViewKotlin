@@ -1,7 +1,4 @@
 package io.github.aerhakim.androidfundamental
 
-class BukuModel (
-    val nama:String?,
-    val gambar:String?,
-    val harga:String?
-)
+data class BukuModel(val gambar: Int, val judul: String, val harga: String) {
+}
